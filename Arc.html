@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>弧形运动效果</title>
+	<style type="text/css">
+	body{
+		margin: 0;
+		padding:0;
+		background: #111;
+		text-align: center;
+	}
+	.stage{
+		margin: 0 auto;
+		width: 120px;
+		height: auto;
+		position: relative;
+		-webkit-transform-origin:center top;
+		-ms-transform-origin:center top;
+		-o-transform-origin:center top;
+		transform-origin:center top;
+		-webkit-transform:rotate(-30deg);
+		-ms-transform:rotate(-30deg);
+		-o-transform:rotate(-30deg);
+		transform:rotate(-30deg);
+		-webkit-animation:sway 2.2s infinite alternate ease-in-out;
+		-ms-animation:sway 2.2s infinite alternate ease-in-out;
+		-o-animation:sway 2.2s infinite alternate ease-in-out;
+		animation:sway 2.2s infinite alternate ease-in-out;
+	}
+	.watch{
+		width: 100%;
+		height: auto;
+	}
+	.seconds{
+		position: absolute;
+		width: 8%;
+		height: auto;
+		bottom: 11.5%;
+		left: 45.5%;
+		transform-origin:center 72.4%;
+		-webkit-transform-origin:center 72.4%;
+		-ms-transform-origin:center 72.4%;
+		-o-transform-origin:center 72.4%;
+		animation:second 60s infinite linear;
+		-webkit-animation:second 60s infinite linear;
+		-ms-animation:second 60s infinite linear;
+		-o-animation:second 60s infinite linear;
+		
+	}
+	@keyframes second{
+	  	to{
+	    	-webkit-transform:rotate(355deg);
+	  	}
+	}
+	@-webkit-keyframes second{
+	  	to{
+	    	-webkit-transform:rotate(355deg);
+	  	}
+	}
+	@-ms-keyframes second{
+	  	to{
+	    	-webkit-transform:rotate(355deg);
+	  	}
+	}
+	@-o-keyframes second{
+	  	to{
+	    	-webkit-transform:rotate(355deg);
+	  	}
+	}
+	@keyframes sway{
+		to{
+			-webkit-transform: rotate(30deg);
+		}
+	}
+	@-webkit-keyframes sway{
+		to{
+			-webkit-transform: rotate(30deg);
+		}
+	}
+	@-ms-keyframes sway{
+		to{
+			-webkit-transform: rotate(30deg);
+		}
+	}
+	@-o-keyframes sway{
+		to{
+			-webkit-transform: rotate(30deg);
+		}
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="stage">
+		<img src="http://p0.qhimg.com/t0197c451833414523e.png" alt="钟表" class="watch"/>
+	  	<img src="http://p9.qhimg.com/t0145f1ae8ad6753b05.png" alt="秒针" class="seconds">
+	</div>
+</body>
+</html>
